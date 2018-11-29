@@ -1,0 +1,55 @@
+.Header {
+    & {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        background: $light-black;
+        padding: $padding-sm;
+        color: $grey;
+        border-bottom: 1px solid $black;
+    }
+    .user {
+        width: 300px;
+        margin-left: auto;
+        display: flex;
+        //flex-flow: row wrap;
+        flex-flow: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        &-name {
+            font-size: $font-text-size-h1;
+            font-weight: 600;
+            &:hover {
+                color: $white;
+                cursor: pointer;
+            }
+        }
+        &-info {
+            img {
+                max-width: 40px;
+                max-height: 40px;
+                border-radius: 50%;
+            }
+            &-button {
+                padding-left: 5px;
+                &:hover {
+                    color: $white;
+                    cursor: pointer;
+                }
+            }
+            &-setting {
+                padding-left: 5px;
+                &:hover {
+                    color: $white;
+                    cursor: pointer;
+                }
+            }
+            &-left {
+                justify-content: space-around;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+            }
+        }
+    }
+}
