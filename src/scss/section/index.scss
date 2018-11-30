@@ -1,6 +1,14 @@
 .line {
     padding: 0px 10px 0px 10px;
     height: 100%;
+    &-1 {
+        margin-top: 435px;
+        @media (max-width: 767px) {
+            margin-top: 400px;
+        }
+        padding: 0px 10px 0px 10px;
+        height: 100%;
+    }
 }
 
 .MessagesBubble {
@@ -28,10 +36,12 @@
         max-height: 40px;
         border-radius: 50%;
     }
-    .mymscolor {
-        background-color: $color2 !important;
-    }
-    .row-reverse {
-        flex-direction: row-reverse !important;
-    }
+}
+
+.mymscolor {
+    background-color: $color2 !important;
+}
+
+.row-reverse {
+    flex-direction: row-reverse !important;
 }
