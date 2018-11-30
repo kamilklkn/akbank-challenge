@@ -2,3 +2,36 @@
     padding: 0px 10px 0px 10px;
     height: 100%;
 }
+
+.MessagesBubble {
+    display: flex;
+    flex-direction: row;
+    background-color: $color1;
+    min-height: 50px;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    &-img {
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+    }
+    &-text {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        color: $white;
+    }
+    img {
+        max-width: 40px;
+        max-height: 40px;
+        border-radius: 50%;
+    }
+    .mymscolor {
+        background-color: $color2 !important;
+    }
+    .row-reverse {
+        flex-direction: row-reverse !important;
+    }
+}
