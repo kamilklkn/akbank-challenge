@@ -17,34 +17,119 @@
 </head>
 
 <body>
-    <section class="Header">
-        <div class="user-image">
-            <div class="user-info">
-                <span class="user-info-img">
-                        <img src="/_site/images/kamilklkn.jpg" class="img-responsive" />
-                </span>
-                <span class="user-name">
-                    <span>Kamil Kalkan</span>
-                </span>
-            </div>
-        </div>
 
-
-        <div class="user">
-            <div class="user-info-left">
-                <div class="user-info-button">
-                    <i class="fas fa-info-circle fa-2x"></i>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <!-- User Info  -->
+            <section class="Header">
+                <div class="user-image">
+                    <div class="user-info">
+                        <span class="user-info-img">
+                            <img src="/_site/images/kamilklkn.jpg" class="img-responsive" />
+                        </span>
+                        <span class="user-name">
+                            <span>Kamil Kalkan</span>
+                        </span>
+                    </div>
                 </div>
-                <div class="user-info-setting">
-                    <i class="fas fa-cog fa-2x"></i>
-                </div>
+            </section>
+
+            <ul class="list-unstyled components">
+                <p>Rooms</p>
+                <li><a href="#">#güvenlik-ekibi</a></li>
+                <li><a href="#">#agile-takımı</a></li>
+                <li><a href="#">#ödeme-sistemleri</a></li>
+                <li><a href="#">#tasarım-ekibi</a></li>
+                <li><a href="#">#test-ekibi</a></li>
+                <li><a href="#">#frontEnd-ekibi</a></li>
+                <li><a href="#">#mobile-ekibi</a></li>
+            </ul>
+            <ul class="list-unstyled components noBorder">
+                <p>Messages</p>
+                <li><a href="#">-Yetkin Can</a></li>
+                <li><a href="#">-Edip Kavvas</a></li>
+                <li><a href="#">-Volkan Alay</a></li>
+                <li><a href="#">-Ayhan Döşlü</a></li>
+
+            </ul>
+            <div class="sidebar-setting">
+                <span class="sidebar-setting-button">
+                    <a class="button button-blue" href="">
+                <i class="fas fa-cog fa-2x"></i>Genel Ayarlar</a>
+            </span>
             </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="channel-info">
+                    <div>
+                        <span class="channel-name">
+                                #agile-takımı
+                        </span>
+                        <span class="channel-nformation">
+                            Agile Scrum takımları chat odası.
+                        </span>
+                    </div>
+                    <span class="channel-user-cont">
+                                <i class="fas fa-user"></i> 50
+                        </span>
+
+
+                </div>
+                <div class="Header-menu">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <div class="user">
+                        <div class="user-info-left Flexleft">
+                            <div class="user-info-button">
+                                <i class="fas fa-info-circle fa-2x"></i>
+                            </div>
+                            <div class="btn-group">
+                                <span class="btn dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-cog fa-2x"></i>
+                                    </span>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">Ayarlar</a>
+                                    <a class="dropdown-item" href="#">Grubu Sessize Al</a>
+                                    <a class="dropdown-item" href="#">Yardım</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <div class="line"></div>
+
+
+            <div class="line"></div>
+
+
+            <div class="line"></div>
 
 
         </div>
+    </div>
 
-    </section>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
 </body>
 
 </html>

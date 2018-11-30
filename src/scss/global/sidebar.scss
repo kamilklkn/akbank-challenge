@@ -1,0 +1,134 @@
+        .wrapper {
+            display: flex;
+            width: 100%;
+            align-items: stretch;
+        }
+        
+        #sidebar {
+            min-width: 250px;
+            max-width: 250px;
+            background: $color6;
+            color: $white;
+            transition: all 0.3s;
+        }
+        
+        #sidebar.active {
+            margin-left: -250px;
+        }
+        
+        #sidebar .sidebar-header {
+            padding: 20px;
+            background: #6d7fcc;
+        }
+        
+        #sidebar ul.components {
+            padding: 20px 0;
+            border-bottom: 1px solid #47748b;
+        }
+        
+        .noBorder {
+            border-bottom: none !important;
+        }
+        
+        #sidebar ul p {
+            padding: 10px;
+            color: $white;
+            font-weight: 600;
+            font-size: $font-text-size;
+        }
+        
+        #sidebar ul li a {
+            padding: 10px;
+            font-size: 1.1em;
+            display: block;
+        }
+        
+        #sidebar ul li a:hover {
+            color: #7386D5;
+            background: #fff;
+        }
+        
+        #sidebar ul li.active>a,
+        a[aria-expanded="true"] {
+            color: #fff;
+            background: #6d7fcc;
+        }
+        
+        a[data-toggle="collapse"] {
+            position: relative;
+        }
+        
+        .dropdown-toggle::after {
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+        
+        ul ul a {
+            font-size: 0.9em !important;
+            padding-left: 30px !important;
+            background: #6d7fcc;
+        }
+        
+        ul.CTAs {
+            padding: 20px;
+        }
+        
+        ul.CTAs a {
+            text-align: center;
+            font-size: 0.9em !important;
+            display: block;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        
+        a.download {
+            background: #fff;
+            color: #7386D5;
+        }
+        
+        a.article,
+        a.article:hover {
+            background: #6d7fcc !important;
+            color: #fff !important;
+        }
+        
+        .sidebar {
+            &-setting {
+                background-color: $black;
+                width: 100%;
+                &-button {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+        
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            height: $finger-size;
+            color: white;
+            background-color: $black;
+            &-icon {
+                justify-content: center;
+                color: black;
+                padding-left: 0;
+                padding-right: 0;
+                width: $finger-size;
+                background-color: transparent;
+            }
+            &-full {
+                width: 100%;
+            }
+            i {
+                padding-right: 10px;
+            }
+        }

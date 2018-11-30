@@ -1,3 +1,26 @@
+.Padding {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
 .Header {
     & {
         display: flex;
@@ -6,10 +29,14 @@
         background: $light-black;
         padding: $padding-sm;
         color: $grey;
-        border-bottom: 1px solid $black;
+        //border-bottom: 1px solid $black;
+        height: 68px;
+    }
+    &-menu {
+        display: flex;
+        flex-direction: row;
     }
     .user {
-        width: 300px;
         margin-left: auto;
         display: flex;
         //flex-flow: row wrap;
@@ -25,6 +52,8 @@
             }
         }
         &-info {
+            display: flex;
+            align-items: center;
             img {
                 max-width: 40px;
                 max-height: 40px;
@@ -45,11 +74,56 @@
                 }
             }
             &-left {
-                justify-content: space-around;
-                display: flex;
-                align-items: center;
-                flex-direction: row;
+                display: flex !important;
+                align-items: center !important;
             }
         }
     }
+}
+
+.channel {
+    &-name {
+        font-size: $font-text-size-h1;
+        color: $color5;
+        font-weight: 600;
+    }
+    &-info {
+        color: $color1;
+        width: 600px;
+    }
+    &-nformation {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+    &-user-cont {
+        color: $black;
+    }
+}
+
+.color {
+    &-black {
+        background-color: $sand;
+    }
+}
+
+#sidebarCollapse {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse {
+        display: block;
+    }
+}
+
+.Flexleft {
+    display: flex !important;
+    align-items: center !important;
 }

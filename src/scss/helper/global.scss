@@ -2,3 +2,32 @@
         background: $color4;
         font-family: $font-family;
     }
+    
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    
+    #content {
+        width: 100%;
+        min-height: 100vh;
+        transition: all 0.3s;
+    }
+    
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1em;
+        font-weight: 300;
+        line-height: 1.7em;
+        color: #999;
+    }
+    
+    a,
+    a:hover,
+    a:focus {
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
