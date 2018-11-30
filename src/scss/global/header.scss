@@ -30,7 +30,7 @@
         padding: $padding-sm;
         color: $grey;
         //border-bottom: 1px solid $black;
-        height: 68px;
+        height: 85px;
     }
     &-menu {
         display: flex;
@@ -49,6 +49,9 @@
             &:hover {
                 color: $white;
                 cursor: pointer;
+            }
+            span {
+                margin-left: 5px;
             }
         }
         &-info {
